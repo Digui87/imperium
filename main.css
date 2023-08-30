@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #191970;
+    color: #DCDCDC;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #DCDCDC;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#about {
+    border-bottom: 2px solid #191970;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+#produtos {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.store-inside {
+    width: 600px;
+    margin-right: 32px;
+}
+
+.produto img {
+    width: 300px;
+}
+
+section .merc {
+    display: flex;
+    justify-content: space-between;
+    max-width: auto;
+}
+
+button {
+    background-color: #191970;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    width: 97%;
+}
+
+@media screen and (max-width: 767px) {
+    .conteudo {
+        display: block;
+    }
+    
+    .container {
+        max-width: 90%;
+    }
+
+    .store-inside {
+        width: 360px;
+        margin-right: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    header nav li {
+        display: block;
+        margin-left: 8px;
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    header .container,
+    section .container {
+    display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    .store-inside {
+        width: 700px;
+    }
+
+    section .conteudo {
+        display: block;
+    }
+
+    section .merc {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        margin-bottom: 32px;
+    }
+}
